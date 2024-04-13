@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <title>Amara's Birthday Wish</title>
+</head>
+<body>
+  <audio autoplay loop><source src="38-Michael-Riepen-Happy-Birthday(chosic.com).ogg" type="audio/ogg"/><source src="38-Michael-Riepen-Happy-Birthday(chosic.com).mp3" type="audio/mpeg"/></audio>
+  <div class="container">
+  <div class="happy">
+    <div class="h">H</div>
+    <div class="a">A</div>
+    <div class="p1">P</div>
+    <div class="p2">P</div>
+    <div class="y">Y</div>
+  </div>
+  <div class="birth"> 
+    <div class="b">B</div>
+    <div class="i">I</div>
+    <div class="r">R</div>
+    <div class="t">T</div>
+    <div class="h2">H</div>
+  </div>
+  <div class="day">
+    <div class="d">D</div>
+    <div class="a">A</div>
+    <div class="y">Y</div>
+  </div>
+  <h1>AMARA</h1>
+  </div>
+  <div class="wishes">
+    <button id="openbtn" onclick="openText()">My Wish</button> 
+    <button id="closebtn" onclick="closeText()">close</button>
+    <p id="parag">I may not be able to give you the whole world, but I promise to love you with all my heart and to do everything in my power to make your birthday and every day the best they can be. Happy birthday, my sweetheart.!&star; &star; &star;</p>
+   
+  </div>
+  <script>
+    function openText(){
+    const text = document.querySelector("#parag")
+    const closebtn = document.querySelector("#closebtn")
+    const openbtn = document.querySelector("#openbtn")
+    text.style.display = "block"
+    closebtn.style.display = "block"
+    openbtn.style.display = "none"
+  
+    }
+    function closeText(){
+    const text = document.querySelector("#parag")
+    text.style.display = "none"
+    const closebtn = document.querySelector("#closebtn")
+    const openbtn = document.querySelector("#openbtn")
+    text.style.display = "none"
+    closebtn.style.display = "none"
+    openbtn.style.display = "block"
+  
+    }
+
+  </script>
+</body>
+</html>
